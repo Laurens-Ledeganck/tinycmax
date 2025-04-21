@@ -1,7 +1,7 @@
 import torch.nn as nn
 
-from tinycmax.blocks import conv_encoder, LazyConvGru, upsample_decoder
-from tinycmax.network_utils import NetworkWrapper
+from tinycmax.model.blocks import conv_encoder, LazyConvGru, upsample_decoder
+from tinycmax.model.network_utils import NetworkWrapper
 
 
 class FlowNetwork(nn.Module):

@@ -1,0 +1,20 @@
+defaults:
+  - datamodule: uzh_fpv
+  - litmodule: train
+  - network: rotation_network  # TODO
+  - loss_fns@loss_fns.train:
+    - mse
+  - loss_fns@loss_fns.validate:
+    - mse
+  - optimizer: adam
+  - scheduler: nothing
+  - trainer: default
+  - callbacks:
+    - progress
+    - checkpoint
+  - logger: nothing
+  - hydra: no_logging
+  - _self_  # to disable warning
+
+stage: train
+name: ${stage}

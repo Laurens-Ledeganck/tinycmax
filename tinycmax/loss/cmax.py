@@ -4,9 +4,9 @@ from dotmap import DotMap
 import torch
 import torch.nn as nn
 
-from cuda_event_ops.cuda import iterative_3d_warp as iterative_3d_warp_cuda
-from tinycmax.cmax_utils import format_events, linear_3d_warp
-from tinycmax.iwe import build_iwe
+from cuda_event_ops import iterative_3d_warp as iterative_3d_warp_cuda
+from tinycmax.loss.cmax_utils import format_events, linear_3d_warp
+from tinycmax.loss.iwe import build_iwe
 
 
 class ContrastMaximization(nn.Module):

@@ -16,7 +16,7 @@ import torch
 from torch.utils.data import ConcatDataset, DataLoader
 import yaml
 
-from tinycmax.data_utils import (
+from tinycmax.datamodule.data_utils import (
     batched,
     ConcatBatchSampler,
     InfiniteDataLoader,

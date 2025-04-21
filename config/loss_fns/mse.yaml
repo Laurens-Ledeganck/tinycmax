@@ -1,0 +1,5 @@
+mse:
+  _target_: torch.nn.MSELoss
+  # size_average: Null
+  # reduce_average: Null
+  # reduction: mean

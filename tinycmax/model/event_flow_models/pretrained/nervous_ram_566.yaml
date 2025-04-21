@@ -1,0 +1,16 @@
+run_id: nervous-ram-566
+model_uuid: c51de7560c3641d0b9e0de9aecbd25f7
+utc_time_created: '2025-02-09 20:42:56.753916'
+n_epochs: 100
+learning_rate: 0.0002
+min_loss: 0.7478103697151317
+settings: {
+  'experiment': 'Default', 
+  'data': {'mode': 'events', 'window': 1000, 'path': 'datasets/data/rotation/', 'window_loss': 10000}, 
+  'loader': {'resolution': [128, 128], 'batch_size': 8, 'augment': ['Horizontal', 'Vertical', 'Polarity'], 'gpu': 0, 'seed': 0, 'rotation_mode': 'difference', 'rotation_type': 'rotvec', 'n_epochs': 100, 'augment_prob': [0.0, 0.0, 0.0]}, 
+  'hot_filter': {'enabled': False, 'max_px': 100, 'min_obvs': 5, 'max_rate': 0.8}, 
+  'model': {'name': 'FireNet', 'encoding': 'cnt', 'round_encoding': False, 'norm_input': False, 'num_bins': 2, 'base_num_channels': 32, 'kernel_size': 3, 'activations': ['relu', None], 'mask_output': True, 'spiking_neuron': None}, 
+  'vis': {'bars': False, 'verbose': True, 'enabled': False, 'px': 400, 'store_grads': False}, 
+  'loss': {'flow_regul_weight': 0.001, 'clip_grad': 100.0, 'overwrite_intermediate': False}, 
+  'optimizer': {'name': 'Adam', 'lr': 0.0002}
+}

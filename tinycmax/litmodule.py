@@ -2,7 +2,7 @@ from dotmap import DotMap
 from lightning import LightningModule
 import torch
 
-from tinycmax.network_utils import recursive_clone
+from tinycmax.model.network_utils import recursive_clone
 
 
 class Show(LightningModule):

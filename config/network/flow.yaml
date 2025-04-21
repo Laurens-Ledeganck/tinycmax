@@ -1,4 +1,4 @@
-_target_: tinycmax.network.WrappedFlowNetwork
+_target_: tinycmax.model.network.WrappedFlowNetwork
 _convert_: object
 encoder_channels: 64
 memory_channels: 64

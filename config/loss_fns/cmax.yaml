@@ -1,5 +1,5 @@
 cmax:
-  _target_: tinycmax.cmax.ContrastMaximization
+  _target_: tinycmax.loss.cmax.ContrastMaximization
   accumulation_window: 10
   base: 10  # should be == accumulation window for linear warping
   warp: linear  # linear, iterative

@@ -4,3 +4,5 @@ __pycache__/
 data/
 logs/
 artifacts/
+testing*
+cuda_event_ops_cloned/

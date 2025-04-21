@@ -1,4 +1,4 @@
-_target_: tinycmax.mvsec.MvsecDataModule
+_target_: tinycmax.datamodule.mvsec.MvsecDataModule
 root_dir: data/mvsec
 time_window: 20000  # us
 count_window: null  # mutually exclusive with time_window

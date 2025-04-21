@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image
 import rerun as rr
 
-from tinycmax.visualizer_utils import event_frame_to_image, flow_map_to_image
+from tinycmax.visualization.visualizer_utils import event_frame_to_image, flow_map_to_image
 
 
 class RerunVisualizer:

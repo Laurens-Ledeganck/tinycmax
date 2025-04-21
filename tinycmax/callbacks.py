@@ -1,6 +1,6 @@
 from lightning.pytorch.callbacks import Callback
 
-from tinycmax.visualizer import FileVisualizer, RerunVisualizer
+from tinycmax.visualization.visualizer import FileVisualizer, RerunVisualizer
 
 
 class Visualizer(Callback):

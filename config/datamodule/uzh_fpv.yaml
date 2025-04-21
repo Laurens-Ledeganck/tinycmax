@@ -1,18 +1,25 @@
-_target_: tinycmax.uzh_fpv.UzhFpvDataModule
-root_dir: data/uzh_fpv
+_target_: tinycmax.datamodule.uzh_fpv.UzhFpvDataModule
+root_dir: data/rotation  # data/uzh_fpv
 time_window: 10000  # us
 count_window: null  # mutually exclusive with time_window
 train_seq_len: 100
 train_crop: [128, 128]  # hw for random, tlbr or null for fixed
 train_recordings:
-  - [indoor_forward_3_davis_with_gt, [30e6, 82e6]]
-  - [indoor_forward_5_davis_with_gt, [30e6, 140e6]]
-  - [indoor_forward_6_davis_with_gt, [30e6, 67e6]]
-  - [indoor_forward_7_davis_with_gt, [30e6, 105e6]]
-  - [indoor_forward_8_davis, [30e6, 157e6]]
-  - [indoor_forward_9_davis_with_gt, [30e6, 77e6]]
-  - [indoor_forward_10_davis_with_gt, [30e6, 73e6]]
-  - [indoor_forward_12_davis, [20e6, 50e6]]
+  - [indoor_forward_3_davis_with_rotation_3, [30e6, 82e6]] 
+  - [indoor_forward_3_davis_with_rotation_4, [30e6, 82e6]] 
+  - [indoor_forward_3_davis_with_rotation_5, [30e6, 82e6]] 
+  - [indoor_forward_3_davis_with_rotation_6, [30e6, 82e6]] 
+  - [indoor_forward_3_davis_with_rotation_7, [30e6, 82e6]] 
+  - [indoor_forward_3_davis_with_rotation_8, [30e6, 82e6]] 
+  - [indoor_forward_3_davis_with_rotation_9, [30e6, 82e6]] 
+  # - [indoor_forward_3_davis_with_gt, [30e6, 82e6]]
+  # - [indoor_forward_5_davis_with_gt, [30e6, 140e6]]
+  # - [indoor_forward_6_davis_with_gt, [30e6, 67e6]]
+  # - [indoor_forward_7_davis_with_gt, [30e6, 105e6]]
+  # - [indoor_forward_8_davis, [30e6, 157e6]]
+  # - [indoor_forward_9_davis_with_gt, [30e6, 77e6]]
+  # - [indoor_forward_10_davis_with_gt, [30e6, 73e6]]
+  # - [indoor_forward_12_davis, [20e6, 50e6]]
 val_crop: [2, 1, 258, 345]  # gives centered (256, 344)
 val_recordings:
   - [indoor_forward_11_davis, [30e6, 81e6]]
